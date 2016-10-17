@@ -9,6 +9,9 @@ var nodemailer = require('nodemailer');
 var routes = require('./routes/index');
 var about = require('./routes/about');
 var contact = require('./routes/contact');
+var skills = require('./routes/skills');
+var experience = require('./routes/experience');
+var work = require('./routes/work');
 
 var app = express();
 
@@ -27,6 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/about', about);
 app.use('/contact', contact);
+app.use('/skills', skills);
+app.use('/experience', experience);
+app.use('/work', work);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

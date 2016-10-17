@@ -8,7 +8,7 @@ html
         link(rel='stylesheet', href='/stylesheets/bootstrap.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
-        nav.navbar-default.navbar-inverse.navbar-fixed-top
+        nav.navbar-fixed-top
             .container
                 .navbar-header
                     button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
@@ -18,11 +18,17 @@ html
                         span.icon-bar
                     a.navbar-brand(href='#') NITIN REDDY
                 #navbar.collapse.navbar-collapse
-                    ul.nav.navbar-nav
+                    ul.nav.nav-pills.nav-container
                         li(class=(title==='Home' ? 'active': ''))
-                            a(href='/') Home
+                            a(href='/', class='link') Home
                         li(class=(title==='About' ? 'active': ''))
-                            a(href='/about') About           
+                            a(href='/about', class='link') About           
+                        li(class=(title==='Skills' ? 'active': ''))
+                            a(href='/skills', class='link') Skills
+                        li(class=(title==='Experience' ? 'active': ''))
+                            a(href='/experience', class='link') Experience
+                        li(class=(title==='Work' ? 'active': ''))
+                            a(href='/work', class='link') Work
                         li(class=(title==='Contact' ? 'active': ''))
-                            a(href='/contact') Contact
+                            a(href='/contact', class='link') Contact
     block content

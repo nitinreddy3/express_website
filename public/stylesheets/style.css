@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+.link {
+	color: #337ab7;
+	transition: color 1s;
+}
+
+.link:hover {
+	color: #00B7FF;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.nav-container {
+	padding: 5px 0;
+}
